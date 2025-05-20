@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+
+
+
+* {
+       margin: 0;
+       padding: 0;
+        box-sizing: border-box;
+       scroll-behavior: smooth;
+       font-family: "Poppins", serif;
+ }
+
+body  {
+    background-color: #222831;
+}
+
+
+header   {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 0.5rem;
+}
+
+.navigetion ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navigetion a {
+     text-decoration: none;
+     color: #eeeeee;
+}
+
+.navigetion a:hover {
+    color: #00adb0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.arrow {
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+.herosub {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name {
+    font-size: 3rem;
+    color: #eeeeee;
+}
+
+.title {
+    font-size: 4rem;
+    color: #00adb0;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.hireme {
+    background-color: #00adb0;
+    color: #eeeeee;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+.Aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column; 
+}
+
+.textTitel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.Aboutname{
+    color: #eeeeee;
+}
+
+.Abouttitel {
+    color: #00adb0;
+}
+
+.AboutMepar {
+    text-align: justify;
+    color: rgba(238, 238, 238, 0.75);
+}
+
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2REM auto;
+    max-width: 1200PX;
+}
+
+.contacttitel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+}
+ .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+ }
+
+ .contact h3 , .contact a {
+    color: #eeeeee;
+    text-decoration: none;
+ }
+
+ .emailandphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+ }
+
+ .socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+ }
+
+ .socialmedia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+ }
+
+ .socialmedia img {
+    width: 24px;
+    height: 24px;
+ }
+
+ footer {
+    color: #eeeeee;
+    padding: 2rem;
+    text-align: center;
+ }
+
+ @media (max-width: 1023px) {
+    header {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .heroImg {
+      width: 400px;
+    }
+    .name,
+    .title {
+      font-size: 2rem;
+    }
+    .arrow {
+      display: none;
+    }
+    .aboutMe {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+    }
+    .textContainer {
+      align-items: center;
+      margin: 0rem 5rem;
+      gap: 1rem;
+    }
+    .aboutName,
+    .aboutTitle {
+      font-size: 2rem;
+    }
+    .light {
+      width: 60px;
+    }
+    .aboutMeImg {
+      width: 400px;
+    }
+    .works {
+      padding: 0;
+    }
+    .worksContainer {
+      padding: 5rem 0rem;
+      gap: 3rem;
+    }
+    .projectTitle {
+      margin-left: 1rem;
+    }
+    .works ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contactContainer {
+      margin: 10rem 5rem;
+      gap: 2rem;
+    }
+    .contact {
+      flex-direction: column;
+      gap: 1rem;
+      margin-right: 0;
+    }
+  }
